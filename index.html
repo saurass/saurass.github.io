@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>My Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/plugins/animate/animate.css">
+    <link rel="stylesheet" href="assets/css/preloader.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <script src="assets/plugins/jquery/jquery.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader-container-body">
+        <div class="bouncingball"></div>
+        <h1 class="brush visit-site-heading">saurass.in</h1>
+    </div>
+    <!-- /Preloader -->
+
+    <div class="screen-container container-fluid active">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+
+                <div class="carousel-item active"
+                    style="background-image: url('https://source.unsplash.com/LAaSoL0LrYs/1920x1080')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="display-4">First Slide</h2>
+                        <p class="lead">This is a description for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item"
+                    style="background-image: url('https://source.unsplash.com/bF2vsubyHcQ/1920x1080')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="display-4">Second Slide</h2>
+                        <p class="lead">This is a description for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item"
+                    style="background-image: url('https://source.unsplash.com/szFUQoyvrxM/1920x1080')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="display-4">Third Slide</h2>
+                        <p class="lead">This is a description for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="screen-container container-fluid d-flex justify-content-center bg-1">
+        <div class="align-self-center" id="intro-main">
+            <h1 class="brush align-self-center text-white text-center">Introduction</h1>
+            <div class="underline">
+                <img class="align-self-center" src="assets/images/curved.svg">
+            </div>
+            <button class="btn btn-outline-light title-info align-self-center" onclick="bringForth('intro')">
+                <h5 class="align-self-center text-white font-italic text-center">Know Me</h5>
+            </button>
+        </div>
+    </div>
+
+    <div class="screen-container container-fluid d-flex justify-content-center bg-2">
+        <div class="align-self-center" id="skill-main">
+            <h1 class="brush align-self-center text-white text-center">Skills</h1>
+            <div class="underline">
+                <img class="align-self-center" src="assets/images/curved.svg">
+            </div>
+            <button class="btn btn-outline-light title-info align-self-center" onclick="bringForth('skill')">
+                <h5 class="align-self-center text-white font-italic text-center">What I Can Do</h5>
+            </button>
+        </div>
+    </div>
+
+    <div class="screen-container container-fluid d-flex justify-content-center bg-3">
+        <div class="align-self-center">
+            <h1 class="brush align-self-center text-white text-center">Projects</h1>
+            <div class="underline">
+                <img class="align-self-center" src="assets/images/curved.svg">
+            </div>
+            <button class="btn btn-outline-light title-info align-self-center">
+                <h5 class="align-self-center text-white font-italic text-center">What I Have Done</h5>
+            </button>
+        </div>
+    </div>
+
+    <div class="screen-container container-fluid d-flex justify-content-center bg-4">
+        <div class="align-self-center">
+            <h1 class="brush align-self-center text-white text-center">About Me</h1>
+            <div class="underline">
+                <img class="align-self-center" src="assets/images/curved.svg">
+            </div>
+            <button class="btn btn-outline-light title-info align-self-center">
+                <h5 class="align-self-center text-white font-italic text-center">Who Am I</h5>
+            </button>
+        </div>
+    </div>
+
+    <div class="showcase" id="intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center quick-text-bold">Saurabh Srivastava</h5>
+                            <h4 class="quick-text text-center profession-text mt-3">Open Source Contributor</h4>
+                            <h4 class="quick-text text-center profession-text">Software Developer</h4>
+                            <div class="social central">
+                                <a href="google.com" class="p-3"><img src="/assets/images/social/github.svg"></a>
+                                <a href="google.com" class="p-3"><img src="/assets/images/social/linkedin.svg"></a>
+                                <a href="google.com" class="p-3"><img src="/assets/images/social/facebook.svg"></a>
+                                <a href="google.com" class="p-3"><img src="/assets/images/social/twitter.svg"></a>
+                            </div>
+                            <div class="text-center mt-5">
+                                <button class="btn btn-dark text-center">Resume <i
+                                        class="custom-ico material-icons">file_download</i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="showcase" id="skill">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-6">
+                    <div class="central disc">
+                        <div class="disc-icon-div">
+                            <img src="/assets/images/icon/web.svg">
+                        </div>
+                        WEB DEV
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6">
+                    <div class="central disc">
+                        <div class="disc-icon-div">
+                            <img src="/assets/images/icon/opensource.svg">
+                        </div>
+                        OPEN SOURCE
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6">
+                    <div class="central disc">
+                        <div class="disc-icon-div">
+                            <img src="/assets/images/icon/creative.svg">
+                        </div>
+                        CREATIVE
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="close-cross central" onclick="showBackHead()">
+        <i class="large material-icons">close</i>
+    </button>
+
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,256 @@
+@font-face {
+    font-family: Brush;
+    src: url('../fonts/Brusher.ttf');
+}
+
+@font-face {
+    font-family: quick-txt;
+    src: url('../fonts/Lato-Light.ttf');
+}
+
+@font-face {
+    font-family: quick-txt-bold;
+    src: url('../fonts/Lato-Regular.ttf');
+}
+
+body {
+    overflow: hidden;
+}
+
+.bg-1 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #23232399;
+    background-blend-mode: overlay;
+    background-image: url("../images/bg/1.jpg");
+}
+
+.bg-2 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #23232399;
+    background-blend-mode: overlay;
+    background-image: url("../images/bg/3.jpg");
+}
+
+.bg-3 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #23232399;
+    background-blend-mode: overlay;
+    background-image: url("../images/bg/2.jpg");
+}
+
+.bg-4 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #23232399;
+    background-blend-mode: overlay;
+    background-image: url("../images/bg/4.jpg");
+}
+
+.brush {
+    font-family: Brush;
+}
+
+.visit-site-heading {
+    color: white;
+    z-index: 10;
+    position: absolute;
+    animation: move-site-name-aside 5s 1 forwards;
+    animation-delay: 4.25s;
+}
+
+.screen-container {
+    height: 100vh;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    background-color: #232323;
+}
+
+.screen-container.active {
+    top: 0;
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.underline {
+    height: 20px;
+    margin-top: -35px;
+}
+
+.showcase {
+    top: 100%;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    height: 10px;
+}
+
+.social img {
+    width: 30px !important;
+}
+
+.central{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-ico {
+    font-size: 15px;
+}
+
+.quick-text {
+    font-family: quick-txt;
+}
+
+.quick-text-bold {
+    font-family: quick-txt-bold;
+}
+
+.title-info {
+    width: 100%;
+    margin-top: 80px;
+    padding-top: 10px;
+}
+
+.close-cross {
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    border: 1px solid white;
+    border-radius: 100%;
+    color: #DB4343;
+    right: 20px;
+    top: 20px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.btn-outline-light:hover {
+    background-color: transparent;
+}
+
+.disc {
+    background: url("/assets/images/circle.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    padding: 100px;
+    font-family: quick-txt;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.disc-icon-div {
+    width: 80px !important;
+}
+
+.disc-icon-div img {
+    max-width: 100%;
+    min-width: 100%;
+    margin-right: 40px;
+}
+
+.a-slide-up {
+    animation: a-move-up 1s ease-out forwards;
+}
+
+.i-slide-up {
+    animation: i-move-up 1s ease-out forwards;
+}
+
+.a-slide-down {
+    animation: a-move-down 1s ease-out forwards;
+}
+
+.i-slide-down {
+    animation: i-move-down 1s ease-out forwards;
+}
+
+@keyframes a-move-up {
+    from {
+        top: 0;
+    }
+    to {
+        top: -100%;
+    }
+}
+
+@keyframes i-move-up {
+    from {
+        top: 100%;
+    }
+    to {
+        top: 0;
+    }
+}
+
+@keyframes a-move-down {
+    from {
+        top: 0;
+    }
+    to {
+        top: 100%;
+    }
+}
+
+@keyframes i-move-down {
+    from {
+        top: -100%;
+    }
+    to {
+        top: 0;
+    }
+}
+
+@keyframes move-site-name-aside {
+    0% {
+        top: auto;
+        left: auto;
+    }
+    100% {
+        top: 40px;
+        left: 45px;
+    }
+}
+
+@media only screen and (max-width: 991.92px) {
+    body {
+        height: auto;
+        overflow-y: visible;
+    }
+    .screen-container {
+        position: static;
+        overflow: hidden;
+    }
+    .disc {
+        padding: 70px;
+        font-size: 15px;
+    }
+}
