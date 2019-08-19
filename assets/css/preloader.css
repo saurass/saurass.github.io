@@ -84,3 +84,9 @@
         width: 80px;
     }
 }
+
+@media only screen and (max-width: 991.92px) {
+    .preloader-container-body {
+        overflow: hidden;
+    }
+}

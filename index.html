@@ -143,7 +143,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-4 col-6">
-                    <div class="central disc">
+                    <div class="central disc" onclick="openStage()">
                         <div class="disc-icon-div">
                             <img src="/assets/images/icon/web.svg">
                         </div>
@@ -171,8 +171,51 @@
     </div>
 
     <button class="close-cross central" onclick="showBackHead()">
+        <i class="large material-icons">arrow_back</i>
+    </button>
+
+
+    <button class="close-cross-content-container central" onclick="revertContent()">
         <i class="large material-icons">close</i>
     </button>
+    <div class="content-container">
+        <div class="header-content quick-text">
+            BACKEND
+        </div>
+
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+
+            <!-- The slideshow -->
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://source.unsplash.com/LAaSoL0LrYs/1920x1080" alt="Los Angeles">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://source.unsplash.com/LAaSoL0LrYs/1920x1080" alt="Chicago">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://source.unsplash.com/LAaSoL0LrYs/1920x1080" alt="New York">
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <i class="material-icons">chevron_left</i>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <i class="material-icons">chevron_right</i>
+            </a>
+
+        </div>
+    </div>
 
     <script src="assets/js/custom.js"></script>
 </body>

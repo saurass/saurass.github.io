@@ -90,6 +90,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-position: center center;
 }
 
 .underline {
@@ -145,10 +146,25 @@ body {
     border: 1px solid white;
     border-radius: 100%;
     color: #DB4343;
-    right: 20px;
+    left: 20px;
     top: 20px;
     opacity: 0;
     cursor: pointer;
+}
+
+.close-cross-content-container {
+    background-color: white;
+    height: 65px;
+    width: 65px;
+    position: fixed;
+    border-radius: 50%;
+    color: #CDCDCD;
+    right: 40px;
+    top: 40px;
+    opacity: 0;
+    cursor: pointer;
+    border: 2px solid #CDCDCD;
+    z-index: 1;
 }
 
 .btn-outline-light:hover {
@@ -176,6 +192,67 @@ body {
     min-width: 100%;
     margin-right: 40px;
 }
+
+.content-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url("/assets/images/bg/background.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 0;
+    width: 0;
+    background-color: white;
+    z-index: 0;
+    opacity: 0;
+}
+
+.content-container .carousel .carousel-inner .carousel-item {
+    max-height: calc(100vh - 100px) !important;
+    max-width: 100%;
+}
+
+.content-container .carousel .carousel-inner .carousel-item img {
+    position: absolute;
+    max-height: calc(100vh - 400px);
+    max-width: 90%;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+}
+
+.header-content {
+    padding: 20px;
+    font-size: 22px;
+}
+
+.content-container .carousel-control-prev, .content-container .carousel-control-next{
+    height: 40px;
+    width: 40px;
+    color: black !important;
+    border: 2px solid black;
+    border-radius: 100%;
+    top: calc(50% - 55px);
+    margin: 10px;
+}
+
+.content-container .carousel-indicators li {
+    background-color: #919191;
+    height: 12px;
+    width: 12px;
+    border-radius: 100%;
+    margin: 5px;
+}
+
+.content-container .carousel-indicators li.active {
+    background-color: #232323;
+}
+
+/* .carousel-indicators {
+    background-color: red;
+    height: 10px;
+    width: 10px;
+} */
 
 .a-slide-up {
     animation: a-move-up 1s ease-out forwards;
@@ -233,10 +310,24 @@ body {
     0% {
         top: auto;
         left: auto;
+        opacity: 1;
+    }
+    2% {
+        opacity: 1;
+    }
+    12% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
     }
     100% {
         top: 40px;
         left: 45px;
+        opacity: 1;
     }
 }
 
@@ -252,5 +343,11 @@ body {
     .disc {
         padding: 70px;
         font-size: 15px;
+    }
+    .close-cross-content-container {
+        height: 40px;
+        width: 40px;
+        top: 20px;
+        right: 20px;
     }
 }
