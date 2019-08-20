@@ -153,8 +153,8 @@ function showBackHead() {
     $("#" + selectedDiv + "-main").addClass("fadeInDown");
 
     var d = {};
-    d.top = "100%";
-    d.height = "100vh";
+    d.top = "200%";
+    d.height = "0";
     $("#" + selectedDiv).animate(d, 1000);
     $("#" + selectedDiv).removeClass(animClass);
     $("#" + selectedDiv).addClass("animated");

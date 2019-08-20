@@ -23,6 +23,7 @@
     </div>
     <!-- /Preloader -->
 
+    <!-- Front Carousel -->
     <div class="screen-container container-fluid active">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -64,7 +65,9 @@
             </a>
         </div>
     </div>
+    <!-- /Front Carousel -->
 
+    <!-- Welcome Screens -->
     <div class="screen-container container-fluid d-flex justify-content-center bg-1">
         <div class="align-self-center" id="intro-main">
             <h1 class="brush align-self-center text-white text-center">Introduction</h1>
@@ -90,29 +93,31 @@
     </div>
 
     <div class="screen-container container-fluid d-flex justify-content-center bg-3">
-        <div class="align-self-center">
+        <div class="align-self-center" id="project-main">
             <h1 class="brush align-self-center text-white text-center">Projects</h1>
             <div class="underline">
                 <img class="align-self-center" src="assets/images/curved.svg">
             </div>
-            <button class="btn btn-outline-light title-info align-self-center">
+            <button class="btn btn-outline-light title-info align-self-center" onclick="bringForth('project')">
                 <h5 class="align-self-center text-white font-italic text-center">What I Have Done</h5>
             </button>
         </div>
     </div>
 
     <div class="screen-container container-fluid d-flex justify-content-center bg-4">
-        <div class="align-self-center">
+        <div class="align-self-center" id="about-main">
             <h1 class="brush align-self-center text-white text-center">About Me</h1>
             <div class="underline">
                 <img class="align-self-center" src="assets/images/curved.svg">
             </div>
-            <button class="btn btn-outline-light title-info align-self-center">
+            <button class="btn btn-outline-light title-info align-self-center" onclick="bringForth('about')">
                 <h5 class="align-self-center text-white font-italic text-center">Who Am I</h5>
             </button>
         </div>
     </div>
+    <!-- /Welcome Screens -->
 
+    <!-- Introduction -->
     <div class="showcase" id="intro">
         <div class="container">
             <div class="row">
@@ -138,7 +143,9 @@
             </div>
         </div>
     </div>
+    <!-- /Introduction -->
 
+    <!-- Skill -->
     <div class="showcase" id="skill">
         <div class="container">
             <div class="row justify-content-center">
@@ -169,6 +176,69 @@
             </div>
         </div>
     </div>
+    <!-- /Skill -->
+
+    <!-- Project -->
+    <div class="showcase" id="project">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-6">
+                    <div class="central disc" onclick="openStage('web-dev')">
+                        <div class="disc-icon-div">
+                            <img src="/assets/images/icon/web.svg">
+                        </div>
+                        WEB DEV
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6">
+                    <div class="central disc" onclick="openStage('open-source')">
+                        <div class="disc-icon-div">
+                            <img src="/assets/images/icon/opensource.svg">
+                        </div>
+                        OPEN SOURCE
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6">
+                    <div class="central disc" onclick="openStage('creative')">
+                        <div class="disc-icon-div">
+                            <img src="/assets/images/icon/creative.svg">
+                        </div>
+                        CREATIVE
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Project -->
+
+    <!-- About -->
+    <div class="showcase" id="about">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-6">
+                    <div class="central disc" onclick="openStage('web-dev')">
+                        <h3 class="brush">Contact</h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="central disc">
+                        <h3 class="brush">Strength</h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="central disc">
+                        <h3 class="brush">Weakness</h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="central disc">
+                        <h3 class="brush">Interests</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /About -->
 
     <button class="close-cross central" onclick="showBackHead()">
         <i class="large material-icons">arrow_back</i>
@@ -198,12 +268,24 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="https://source.unsplash.com/LAaSoL0LrYs/1920x1080" alt="Los Angeles">
+                    <div class="carousel-caption">
+                        <h4 class="dark-text">Los Angeles</h4>
+                        <p class="font-italic text-muted">We had such a great time in LA!</p>
+                    </div>
                 </div>
                 <div class="carousel-item">
                     <img src="https://source.unsplash.com/LAaSoL0LrYs/1920x1080" alt="Chicago">
+                    <div class="carousel-caption">
+                        <h4 class="dark-text">Los Angeles</h4>
+                        <p class="font-italic text-muted">We had such a great time in LA!</p>
+                    </div>
                 </div>
                 <div class="carousel-item">
                     <img src="https://source.unsplash.com/LAaSoL0LrYs/1920x1080" alt="New York">
+                    <div class="carousel-caption">
+                        <h4 class="dark-text">Los Angeles</h4>
+                        <p class="font-italic text-muted">We had such a great time in LA!</p>
+                    </div>
                 </div>
             </div>
 
