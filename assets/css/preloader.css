@@ -33,15 +33,15 @@
     }
     50% {
         transform: translateY(100px);
-        height: 80px;
+        height: 70px;
         -webkit-animation-timing-function: ease-out;
     }
     55% {
-        height: 70px;
+        height: 60px;
         -webkit-animation-timing-function: ease-in;
     }
     65% {
-        height: 80px;
+        height: 70px;
         -webkit-animation-timing-function: ease-out;
     }
     95% {
@@ -55,8 +55,8 @@
 
 @keyframes spread-ball{
     77% {
-        height: 80px;
-        width: 80px;
+        height: 70px;
+        width: 70px;
     }
     100% {
         height: 5000px;
@@ -66,8 +66,8 @@
 
 @keyframes push-ball-left {
     62% {
-        height: 80px;
-        width: 80px;
+        height: 70px;
+        width: 70px;
     }
     85% {
         top: auto;
@@ -76,14 +76,14 @@
         width: 5000px;
     }
     99% {
-        top: 20px;
+        top: 30px;
         left: 120px;
     }
     100% {
-        top: 20px;
+        top: 30px;
         left: 80px;
-        height: 80px;
-        width: 80px;
+        height: 70px;
+        width: 70px;
     }
 }
 

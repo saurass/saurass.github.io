@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Innovation</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/favicon.png" type="image/gif" sizes="16x16">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/plugins/animate/animate.css">
@@ -150,27 +151,27 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-4 col-6">
-                    <div class="central disc" onclick="openStage('web-dev')">
+                    <div class="central disc" onclick="openStage('web-skill')">
                         <div class="disc-icon-div">
                             <img src="/assets/images/icon/web.svg">
                         </div>
-                        WEB DEV
+                        WEB
                     </div>
                 </div>
                 <div class="col-lg-4 col-6">
-                    <div class="central disc">
+                    <div class="central disc" onclick="openStage('database')">
                         <div class="disc-icon-div">
-                            <img src="/assets/images/icon/opensource.svg">
+                            <img src="/assets/images/icon/db.svg">
                         </div>
-                        OPEN SOURCE
+                        DATABASE
                     </div>
                 </div>
                 <div class="col-lg-4 col-6">
-                    <div class="central disc">
+                    <div class="central disc" onclick="openStage('dev-ops')">
                         <div class="disc-icon-div">
-                            <img src="/assets/images/icon/creative.svg">
+                            <img src="/assets/images/icon/dev-ops.svg">
                         </div>
-                        CREATIVE
+                        DEV-OPS
                     </div>
                 </div>
             </div>
@@ -216,22 +217,22 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-3 col-6">
-                    <div class="central disc" onclick="openStage('web-dev')">
+                    <div class="central disc" onclick="openStage('contact')">
                         <h3 class="brush">Contact</h3>
                     </div>
                 </div>
                 <div class="col-lg-3 col-6">
-                    <div class="central disc">
+                    <div class="central disc" onclick="openStage('strength')">
                         <h3 class="brush">Strength</h3>
                     </div>
                 </div>
                 <div class="col-lg-3 col-6">
-                    <div class="central disc">
+                    <div class="central disc" onclick="openStage('weakness')">
                         <h3 class="brush">Weakness</h3>
                     </div>
                 </div>
                 <div class="col-lg-3 col-6">
-                    <div class="central disc">
+                    <div class="central disc" onclick="openStage('interests')">
                         <h3 class="brush">Interests</h3>
                     </div>
                 </div>
@@ -249,9 +250,10 @@
         <i class="large material-icons">close</i>
     </button>
 
+    <!-- Web Dev -->
     <div class="content-container" id="web-dev">
         <div class="header-content quick-text">
-            BACKEND
+            WEB DEV
         </div>
 
         <div id="demo" class="carousel slide" data-ride="carousel">
@@ -261,30 +263,46 @@
                 <li data-target="#demo" data-slide-to="0" class="active"></li>
                 <li data-target="#demo" data-slide-to="1"></li>
                 <li data-target="#demo" data-slide-to="2"></li>
+                <li data-target="#demo" data-slide-to="3"></li>
+                <li data-target="#demo" data-slide-to="4"></li>
             </ul>
 
             <!-- The slideshow -->
 
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="https://source.unsplash.com/LAaSoL0LrYs/1920x1080" alt="Los Angeles">
+                    <img src="/assets/images/content/review-it.png" alt="Review It">
                     <div class="carousel-caption">
-                        <h4 class="dark-text">Los Angeles</h4>
-                        <p class="font-italic text-muted">We had such a great time in LA!</p>
+                        <h4 class="dark-text">Review It</h4>
+                        <p class="font-italic text-muted">Review Platform for products & services</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="https://source.unsplash.com/LAaSoL0LrYs/1920x1080" alt="Chicago">
+                    <img src="/assets/images/content/cypher19.png" alt="Cypher '19'">
                     <div class="carousel-caption">
-                        <h4 class="dark-text">Los Angeles</h4>
-                        <p class="font-italic text-muted">We had such a great time in LA!</p>
+                        <h4 class="dark-text">Cypher '19</h4>
+                        <p class="font-italic text-muted">Cyber Security Workshop</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="https://source.unsplash.com/LAaSoL0LrYs/1920x1080" alt="New York">
+                    <img src="assets/images/content/oss-web.png" alt="OSS website">
                     <div class="carousel-caption">
-                        <h4 class="dark-text">Los Angeles</h4>
-                        <p class="font-italic text-muted">We had such a great time in LA!</p>
+                        <h4 class="dark-text">OSS Website</h4>
+                        <p class="font-italic text-muted">Oss Website</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/content/green-board.png" alt="Green Board">
+                    <div class="carousel-caption">
+                        <h4 class="dark-text">Green Board</h4>
+                        <p class="font-italic text-muted">Oss Website</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/content/twango.png" alt="Hans Matrimony Dashboard">
+                    <div class="carousel-caption">
+                        <h4 class="dark-text">Hans Matrimony</h4>
+                        <p class="font-italic text-muted">Dashboard of HansMatrimony partner app</p>
                     </div>
                 </div>
             </div>
@@ -299,6 +317,491 @@
 
         </div>
     </div>
+    <!-- /Web Dev -->
+
+    <!-- Open Source -->
+    <div class="content-container" id="open-source">
+        <div class="header-content quick-text">
+            Open Source
+        </div>
+
+        <div id="oss" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#oss" data-slide-to="0" class="active"></li>
+            </ul>
+
+            <!-- The slideshow -->
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/assets/images/content/PhpMyAdmin.svg" alt="PhpMyAdmin">
+                    <div class="carousel-caption">
+                        <h4 class="dark-text">phpMyAdmin</h4>
+                        <p class="font-italic text-muted">Open Source Database managment tool for MySQL & MariaDB</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#oss" data-slide="prev">
+                <i class="material-icons">chevron_left</i>
+            </a>
+            <a class="carousel-control-next" href="#oss" data-slide="next">
+                <i class="material-icons">chevron_right</i>
+            </a>
+
+        </div>
+    </div>
+    <!-- /Open Source -->
+
+    <!-- Creative -->
+    <div class="content-container" id="creative">
+        <div class="header-content quick-text">
+            Open Source
+        </div>
+
+        <div id="creates" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#creates" data-slide-to="0" class="active"></li>
+                <li data-target="#creates" data-slide-to="1" class="active"></li>
+                <li data-target="#creates" data-slide-to="2" class="active"></li>
+                <li data-target="#creates" data-slide-to="3" class="active"></li>
+            </ul>
+
+            <!-- The slideshow -->
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/assets/images/content/zombie-ddos.png" alt="Zombie DDOS">
+                    <div class="carousel-caption">
+                        <h4 class="dark-text">Zombie DDOS</h4>
+                        <p class="font-italic text-muted">DDOS attack performing virus on your command</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/images/content/vampire-whatsapp.png" alt="Vampire WhatsApp V2">
+                    <div class="carousel-caption">
+                        <h4 class="dark-text">Vampire WhatsApp V2</h4>
+                        <p class="font-italic text-muted">A WhatsApp automation tool using selenium</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/images/content/php-torrent.PNG" alt="PHP Torrent">
+                    <div class="carousel-caption">
+                        <h4 class="dark-text">PHP Torrent</h4>
+                        <p class="font-italic text-muted">P2P file sharing desktop application.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/images/content/peach.png" alt="Peach PHP">
+                    <div class="carousel-caption">
+                        <h4 class="dark-text">Peach PHP</h4>
+                        <p class="font-italic text-muted">A PHP MVC framework for easy, fast & secure Web Development
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#creates" data-slide="prev">
+                <i class="material-icons">chevron_left</i>
+            </a>
+            <a class="carousel-control-next" href="#creates" data-slide="next">
+                <i class="material-icons">chevron_right</i>
+            </a>
+
+        </div>
+    </div>
+    <!-- /Creative -->
+
+
+    <!-- Web-Skill -->
+    <div class="content-container" id="web-skill">
+        <div class="header-content quick-text">
+            WEB DEVELOPMENT
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 offset-md-4 central">
+                <h1 class="brush">Backend</h1>
+            </div>
+        </div>
+        <div class="row"></div>
+        <div class="row">
+            <div class="col-md-4 offset-md-4 central">
+                <h4 class="quick-text text-muted">PHP & Laravel</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 offset-md-4 central">
+                <h4 class="quick-text text-muted">Node JS</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 offset-md-4 central">
+                <h4 class="quick-text text-muted">Django</h4>
+            </div>
+        </div>
+        <hr>
+        <div class="row"></div>
+
+        <div class="row">
+            <div class="col-md-4 offset-md-4 central">
+                <h1 class="brush">Frontend</h1>
+            </div>
+        </div>
+        <div class="row"></div>
+        <div class="row">
+            <div class="col-md-4 offset-md-4 central">
+                <h4 class="quick-text text-muted">HTML & CSS</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 offset-md-4 central">
+                <h4 class="quick-text text-muted">Bootstrap & Responsive Design</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 offset-md-4 central">
+                <h4 class="quick-text text-muted">Javascript</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 offset-md-4 central">
+                <h4 class="quick-text text-muted">Angular 2+</h4>
+            </div>
+        </div>
+        <hr>
+        <div class="row"></div>
+
+        <div class="row">
+            <div class="col-md-4 offset-md-4 central">
+                <h1 class="brush">And...</h1>
+            </div>
+        </div>
+        <div class="row"></div>
+        <div class="row">
+            <div class="col-md-4 offset-md-4 central">
+                <h4 class="quick-text text-muted">Knowledge of Git</h4>
+            </div>
+        </div>
+        <hr>
+        <div class="row"></div>
+
+    </div>
+    <!-- /Web-skill -->
+
+
+    <!-- Database -->
+    <div class="content-container" id="database">
+        <div class="header-content quick-text">
+            WEB DEVELOPMENT
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 offset-md-4 central">
+                <h1 class="brush">Databases</h1>
+            </div>
+        </div>
+        <div class="row"></div>
+        <div class="row">
+            <div class="col-md-4 offset-md-4 central">
+                <h4 class="quick-text text-muted">MySQL</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 offset-md-4 central">
+                <h4 class="quick-text text-muted">SQLite</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 offset-md-4 central">
+                <h4 class="quick-text text-muted">MongoDB</h4>
+            </div>
+        </div>
+        <hr>
+        <div class="row"></div>
+
+        <div class="row">
+            <div class="col-md-4 offset-md-4 central">
+                <h1 class="brush">Skills</h1>
+            </div>
+        </div>
+        <div class="row"></div>
+        <div class="row">
+            <div class="col-md-4 offset-md-4 central">
+                <h4 class="quick-text text-muted">Efficient Querying</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 offset-md-4 central">
+                <h4 class="quick-text text-muted">Normalization</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 offset-md-4 central">
+                <h4 class="quick-text text-muted">Database Sync Jobs</h4>
+            </div>
+        </div>
+        <hr>
+        <div class="row"></div>
+
+    </div>
+    <!-- /Database -->
+
+
+    <!-- Dev Ops -->
+    <div class="content-container" id="dev-ops">
+        <div class="header-content quick-text">
+            DEV-OPS
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 offset-md-4 central">
+                <h1 class="brush">Operating System</h1>
+            </div>
+        </div>
+        <div class="row"></div>
+        <div class="row">
+            <div class="col-md-4 offset-md-4 central">
+                <h4 class="quick-text text-muted">Linux</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 offset-md-4 central">
+                <h4 class="quick-text text-muted">Windows</h4>
+            </div>
+        </div>
+        <hr>
+        <div class="row"></div>
+
+
+        <div class="row">
+            <div class="col-md-4 offset-md-4 central">
+                <h1 class="brush">Server</h1>
+            </div>
+        </div>
+        <div class="row"></div>
+        <div class="row">
+            <div class="col-md-4 offset-md-4 central">
+                <h4 class="quick-text text-muted">Apache</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 offset-md-4 central">
+                <h4 class="quick-text text-muted">Nginx</h4>
+            </div>
+        </div>
+        <hr>
+        <div class="row"></div>
+
+        <div class="row">
+            <div class="col-md-4 offset-md-4 central">
+                <h1 class="brush">And...</h1>
+            </div>
+        </div>
+        <div class="row"></div>
+        <div class="row">
+            <div class="col-md-4 offset-md-4 central">
+                <h4 class="quick-text text-muted">Knowledege of Docker</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 offset-md-4 central">
+                <h4 class="quick-text text-muted">Experience with AWS</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 offset-md-4 central">
+                <h4 class="quick-text text-muted">Server scaling & crone Jobs</h4>
+            </div>
+        </div>
+        <hr>
+        <div class="row"></div>
+
+    </div>
+    <!-- /Dev Ops -->
+
+    <!-- Contact Me -->
+    <div class="content-container" id="contact">
+        <div class="header-content quick-text">
+            CONTACT
+        </div>
+
+        <div class="row mt-6">
+            <div class="col-md-4 offset-md-4 central">
+                <h1 class="brush">Contact Me</h1>
+            </div>
+        </div>
+        <div class="row"></div>
+        <div class="row">
+            <div class="col-md-4 offset-md-4 central">
+                <h4 class="quick-text text-muted">saurabhsrivastava312@gmail.com</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 offset-md-4 central">
+                <h4 class="quick-text text-muted">+91 9454115294</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 offset-md-4 central">
+                <h4 class="quick-text text-muted">+91 7355211418</h4>
+            </div>
+        </div>
+        <hr>
+        <div class="row"></div>
+
+    </div>
+    <!-- /Contact Me -->
+
+    <!-- Strength -->
+    <div class="content-container" id="strength">
+        <div class="header-content quick-text">
+            STRENGHTS
+        </div>
+
+        <div class="row mt-6">
+            <div class="col-md-4 offset-md-4 central">
+                <h1 class="brush">General</h1>
+            </div>
+        </div>
+        <div class="row"></div>
+        <div class="row">
+            <div class="col-md-8 offset-md-2 central">
+                <h4 class="quick-text text-muted">Tech Enthusiast</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 offset-md-2 central">
+                <h4 class="quick-text text-muted">Quick Learner</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 central">
+                <h4 class="quick-text text-muted">Wondering how things work</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 offset-md-2 central">
+                <h4 class="quick-text text-muted">Crazy For Innovation</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 offset-md-2 central">
+                <h4 class="quick-text text-muted">Creative Thinking</h4>
+            </div>
+        </div>
+        <hr>
+        <div class="row"></div>
+
+        <div class="row mt-6">
+            <div class="col-md-4 offset-md-4 central">
+                <h1 class="brush">Technical</h1>
+            </div>
+        </div>
+        <div class="row"></div>
+        <div class="row">
+            <div class="col-md-8 offset-md-2 central">
+                <h4 class="quick-text text-muted">Very Good at Backend</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 offset-md-2 central">
+                <h4 class="quick-text text-muted">Software architecture designing</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 offset-md-2 central">
+                <h4 class="quick-text text-muted">Planning Projects</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 offset-md-2 central">
+                <h4 class="quick-text text-muted">Team Work & Managment</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 offset-md-2 central">
+                <h4 class="quick-text text-muted">Creating robust code</h4>
+            </div>
+        </div>
+        <hr>
+        <div class="row"></div>
+
+    </div>
+    <!-- /Strength -->
+
+
+    <!-- Weakness -->
+    <div class="content-container" id="weakness">
+        <div class="header-content quick-text">
+            WEAKNESS
+        </div>
+
+        <div class="row"></div>
+        <div class="row">
+            <div class="col-md-8 offset-md-2 central">
+                <h1 class="brish">Weakness</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 offset-md-2 central">
+                <h4 class="quick-text text-muted">Very Trusting Nature</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 central">
+                <h4 class="quick-text text-muted">Mild pressure equals quality work</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 offset-md-2 central">
+                <h4 class="quick-text text-muted">Silence is the way I function</h4>
+            </div>
+        </div>
+        <hr>
+        <div class="row"></div>
+
+    </div>
+    <!-- /Weakness -->
+
+    <!-- Interest -->
+    <div class="content-container" id="interests">
+        <div class="header-content quick-text">
+            INTERESTS
+        </div>
+
+        <div class="row"></div>
+        <div class="row mt-6">
+            <div class="col-md-4 offset-md-4 central">
+                <h1 class="brush">Hobbies & Interest</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 offset-md-2 central">
+                <h4 class="quick-text text-muted">Listening to music</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 offset-md-2 central">
+                <h4 class="quick-text text-muted">Movies / Series</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 offset-md-2 central">
+                <h4 class="quick-text text-muted">Fun with friends</h4>
+            </div>
+        </div>
+        <hr>
+        <div class="row"></div>
+
+    </div>
+    <!-- /Interest -->
 
     <script src="assets/js/custom.js"></script>
 </body>

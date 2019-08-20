@@ -155,7 +155,9 @@ function showBackHead() {
     var d = {};
     d.top = "200%";
     d.height = "0";
-    $("#" + selectedDiv).animate(d, 1000);
+    $("#" + selectedDiv).animate(d, 1000, function() {
+        $("#" + selectedDiv).css("height", "-200%");
+    });
     $("#" + selectedDiv).removeClass(animClass);
     $("#" + selectedDiv).addClass("animated");
     $("#" + selectedDiv).addClass("fadeOutDown");
