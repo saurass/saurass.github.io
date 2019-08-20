@@ -160,17 +160,20 @@ function showBackHead() {
     $("#" + selectedDiv).addClass("animated");
     $("#" + selectedDiv).addClass("fadeOutDown");
 }
+
 var removeClassContainer = "animated zoomIn zoomOut";
-function openStage() {
+var content_open = "";
+function openStage(div_id) {
     var d = {
         "z-index" : 15
     };
+    content_open = div_id;
     d.visibility = "visible";
-    $(".content-container").removeClass(removeClassContainer);
-    $(".content-container").css(d);
-    $(".content-container").addClass("animated");
-    $(".content-container").addClass("zoomIn");
-    $(".content-container").css("opacity", "1");
+    $("#" + div_id).removeClass(removeClassContainer);
+    $("#" + div_id).css(d);
+    $("#" + div_id).addClass("animated");
+    $("#" + div_id).addClass("zoomIn");
+    $("#" + div_id).css("opacity", "1");
 
     var d2 = {
         "z-index": 17
@@ -186,11 +189,11 @@ function revertContent() {
     d.visibility = "hidden";
     d.opacity = "0";
 
-    $(".content-container").removeClass(removeClassContainer);
-    $(".content-container").addClass("animated");
-    $(".content-container").addClass("zoomOut");
+    $("#" + content_open).removeClass(removeClassContainer);
+    $("#" + content_open).addClass("animated");
+    $("#" + content_open).addClass("zoomOut");
     setTimeout(function() {
-        $(".content-container").css(d);
+        $("#" + content_open).css(d);
     }, 1000);
 
     var d2 = {
