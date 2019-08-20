@@ -28,10 +28,16 @@ function animateLogo() {
     d.height = "0vh";
     setTimeout(function () {
         $(".preloader-container-body").animate(d, 100);
+        $(".preloader-container-body").css("position", "static");
+        $(".preloader-container-body").css("z-index", "");
+        
         if(!isMobileDevice()) {
             $(".screen-container").css("position", "absolute");
             $(".bouncingball").css("position", "fixed");
             $(".visit-site-heading").css("position", "fixed");
+        } else {
+            $(document.body).css("overflow-y", "visible");
+            $(document.body).css("height", "auto");
         }
     }, 5250);
 }
@@ -133,7 +139,7 @@ function bringForth(div_id) {
     $("#" + div_id).addClass("fadeInUp");
 }
 
-function showWel(div_id) {
+function showWel() {
     $(".showcase").css("position", "fixed");
 }
 
@@ -159,8 +165,7 @@ function openStage() {
     var d = {
         "z-index" : 15
     };
-    d.height = "100vh";
-    d.width = "100vw";
+    d.visibility = "visible";
     $(".content-container").removeClass(removeClassContainer);
     $(".content-container").css(d);
     $(".content-container").addClass("animated");
@@ -178,8 +183,7 @@ function revertContent() {
     var d = {
         "z-index": "0"
     };
-    d.height = "0";
-    d.width = "0";
+    d.visibility = "hidden";
     d.opacity = "0";
 
     $(".content-container").removeClass(removeClassContainer);
