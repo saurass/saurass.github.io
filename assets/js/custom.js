@@ -154,7 +154,7 @@ function showBackHead() {
 
     var d = {};
     d.top = "100%";
-    d.height = "10px";
+    d.height = "100vh";
     $("#" + selectedDiv).animate(d, 1000);
     $("#" + selectedDiv).removeClass(animClass);
     $("#" + selectedDiv).addClass("animated");
