@@ -73,6 +73,14 @@ body {
     background-color: #424242;
 }
 
+.port-screen {
+    background-image: linear-gradient(to right, #232323, #000000);
+}
+
+.text-main-intro-div {
+    width: 40vw;
+}
+
 .screen-container.active {
     top: 0;
 }
@@ -114,7 +122,20 @@ body {
     width: 30px !important;
 }
 
-.central{
+.port-img {
+    max-height: 80%;
+    margin-top: 35%;
+    margin-left: -30%;
+    bottom: 0;
+    right: 0;
+    filter: brightness(80%);
+}
+
+.port-img-container {
+    height: 100vh;
+}
+
+.central {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -149,6 +170,18 @@ body {
     left: 40px;
     top: 100px;
     opacity: 0;
+    cursor: pointer;
+}
+
+.btn-down-arrow {
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    border: 1px solid white;
+    border-radius: 100%;
+    color: #DB4343;
+    bottom: 20px;
     cursor: pointer;
 }
 
@@ -231,7 +264,7 @@ body {
     font-size: 22px;
 }
 
-.content-container .carousel-control-prev, .content-container .carousel-control-next{
+.content-container .carousel-control-prev, .content-container .carousel-control-next {
     height: 40px;
     width: 40px;
     color: black !important;
@@ -354,5 +387,11 @@ body {
         width: 40px;
         top: 20px;
         right: 20px;
+    }
+    .port-screen {
+        background-image: linear-gradient(to right, #232323, #232323);
+    }
+    .port-main {
+        display: none;
     }
 }
