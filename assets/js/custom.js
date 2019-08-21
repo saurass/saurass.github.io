@@ -1,7 +1,7 @@
 const allClass = "a-slide-up i-slide-up a-slide-down i-slide-down";
 var screenCount = $(".screen-container").length;
 var divCount = screenCount;
-var rebindTime = isMobileDevice() ? 100 : 1200;
+var rebindTime = isMobileDevice() ? 100 : 800;
 var scrollAnimationTime = 1000;
 var selectedDiv = "";
 var animClass = "fadeInUp fadeOutUp fadeInDown fadeOutDown fadeInLeft fadeOutLeft animated";
