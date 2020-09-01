@@ -17,6 +17,7 @@ function isMobileDevice() {
 $(document).ready(function () {
     animateLogo();
     bindEvent(10);
+    $(this).scrollTop(0);
 });
 
 $(window).on("load", function () {
@@ -30,8 +31,8 @@ function animateLogo() {
         $(".preloader-container-body").animate(d, 100);
         $(".preloader-container-body").css("position", "static");
         $(".preloader-container-body").css("z-index", "");
-        
-        if(!isMobileDevice()) {
+
+        if (!isMobileDevice()) {
             $(".screen-container").css("position", "absolute");
             $(".bouncingball").css("position", "fixed");
             $(".visit-site-heading").css("position", "fixed");
@@ -155,7 +156,7 @@ function showBackHead() {
     var d = {};
     d.top = "200%";
     d.height = "0";
-    $("#" + selectedDiv).animate(d, 1000, function() {
+    $("#" + selectedDiv).animate(d, 1000, function () {
         $("#" + selectedDiv).css("height", "-200%");
     });
     $("#" + selectedDiv).removeClass(animClass);
@@ -167,7 +168,7 @@ var removeClassContainer = "animated zoomIn zoomOut";
 var content_open = "";
 function openStage(div_id) {
     var d = {
-        "z-index" : 15
+        "z-index": 15
     };
     content_open = div_id;
     d.visibility = "visible";
@@ -194,7 +195,7 @@ function revertContent() {
     $("#" + content_open).removeClass(removeClassContainer);
     $("#" + content_open).addClass("animated");
     $("#" + content_open).addClass("zoomOut");
-    setTimeout(function() {
+    setTimeout(function () {
         $("#" + content_open).css(d);
     }, 1000);
 
