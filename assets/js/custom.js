@@ -15,9 +15,12 @@ function isMobileDevice() {
 }
 
 $(document).ready(function () {
+    // $(this).scrollTop(0);
     animateLogo();
     bindEvent(10);
-    $(this).scrollTop(0);
+    setTimeout(() => {
+        $(this).scrollTop(0);
+    }, 4000);
 });
 
 $(window).on("load", function () {
